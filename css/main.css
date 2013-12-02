@@ -1,0 +1,35 @@
+html, button, input, select, textarea { color:#222; }
+body,h1,h2,h3,h4,h5,h6 { font-size:100%; line-height:1.2; font-family:'돋움', dotum, Helvetica, sans-serif; }
+
+textarea { resize:vertical; }
+.blind, legend, hr, caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i, em, address { font-style:normal; font-weight:normal; }
+
+.ir { background-color:transparent; border:0; overflow: hidden; *text-indent:-9999px; }
+.ir:before { content:""; display: block; width:0; height:150%; }
+
+.hidden { display:none !important; visibility:hidden; }
+.invisible { visibility:hidden; }
+
+.clearfix:before, .clearfix:after { content:" "; display:table; }
+.clearfix:after { clear:both; }
+
+.clearfix { *zoom:1; }
+
+@media only screen and (max-width:768px) {
+}
+
+@media print {
+  * { background:transparent !important; color:#000 !important; box-shadow:none !important; text-shadow:none !important; }
+  a { text-decoration: underline; }
+
+  .ir a:after,  a[href^="javascript:"]:after, a[href^="#"]:after { content:""; }
+  tr,  img { page-break-inside:avoid; }
+  img { max-width:100% !important; }
+
+  @page {
+    margin:0.5cm;
+  }
+  p,  h2,  h3 { orphans:3; widows:3; }
+  h2,  h3 { page-break-after:avoid; }
+}
